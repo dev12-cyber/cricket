@@ -32,12 +32,13 @@
 
 <body>
     <!-- Header Start -->
-    <div class="container-fluid px-0" style="background-color: #fbc02d;">
+    <div class="container-fluid px-0" style="background-color: #FFFFFF;">
         <div class="row gx-0">
             <div class="col-lg-3 d-none d-lg-block">
                 <a href="index.html" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
                     <img src="./img/Legenz Mono.png" alt="Gymster Logo" class="img-fluid" 
-                        style="max-height: 80px; background-color: white; padding: 5px; border-radius: 5px;">
+                    style="width: 200px; height: 100px; background-color: white; padding: 5px; border-radius: 5px;">
+               
                 </a>
             </div>
             <div class="col-lg-9">
@@ -72,27 +73,29 @@
                         </div>
                     </div>
                 </div>
-                <nav class="navbar navbar-expand-lg navbar-dark p-3 p-lg-0 px-lg-5" style="background-color: #fbc02d;">
+                <nav class="navbar navbar-expand-lg navbar-dark p-3 p-lg-0 px-lg-5" style="background-color: #FFFFFF;">
                     <div class="container-fluid">
                         <!-- Logo on the left for mobile -->
                         <a href="index.html" class="navbar-brand d-block d-lg-none">
                             <img src="./img/Legenz Mono.png" alt="Gymster Logo" class="img-fluid" 
-                                style="max-height: 60px; background-color: white; padding: 5px; border-radius: 5px;">
+                            style="width: 200px; height: 100px; background-color: white; padding: 5px; border-radius: 5px;">
                         </a>
                         
                         <!-- Toggle Button on the Right -->
-                        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
+                        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" 
+                        style="border-color: #FF9B00;">
+                    <span class="navbar-toggler-icon" style="filter: invert(54%) sepia(98%) saturate(818%) hue-rotate(3deg) brightness(102%) contrast(103%);"></span>
+                </button>
+                
     
                         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                             <div class="navbar-nav mr-auto py-0">
-                                <a href="index.html" class="nav-item nav-link active">Introduction</a>
-                                <a href="about.html" class="nav-item nav-link">Format & Flowchart</a>
-                                <a href="class.html" class="nav-item nav-link">People</a>
-                                <a href="team.html" class="nav-item nav-link">Behind the Wickets</a>
-                                <a href="contact.html" class="nav-item nav-link">Analysis & Canvas</a>
-                                <a href="contact.html" class="nav-item nav-link">Future Plans</a>  
+                                <a href="index.html" class="nav-item nav-link active" style="color: #FF9B00 !important;">Introduction</a>
+                                <a href="about.html" class="nav-item nav-link" style="color: #FF9B00 !important;">Format & Flowchart</a>
+                                <a href="class.html" class="nav-item nav-link" style="color: #FF9B00 !important;">People</a>
+                                <a href="team.html" class="nav-item nav-link" style="color: #FF9B00 !important;">Behind the Wickets</a>
+                                <a href="contact.html" class="nav-item nav-link" style="color: #FF9B00 !important;">Analysis & Canvas</a>
+                                <a href="contact.html" class="nav-item nav-link" style="color: #FF9B00 !important;">Future Plans</a>  
                             </div>
                         </div>
                     </div>
@@ -111,7 +114,7 @@
                 <div class="carousel-item active">
                     <img class="w-100" src="img/banner1st.jpg" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <div class="p-3" style="max-width: 900px;">
+                        <div class="p-3 text-center" style="max-width: 900px;">
                             <span class="badge bg-warning text-dark p-2">
                                 <i class="fas fa-trophy"></i> THE LEGEN-Z T10
                             </span>
@@ -120,16 +123,33 @@
                             
                             <a href="" class="btn btn-primary py-md-3 px-md-5 me-3">Registration And Pay</a>
                             <a href="" class="btn btn-light py-md-3 px-md-5">Login</a>
-                           
                         </div>
-                      
                     </div>
                 </div>
-              
             </div>
-           
         </div>
     </div>
+    
+    <style>
+        /* Ensure full height */
+        #header-carousel, .carousel-inner, .carousel-item {
+            height: 50vh;
+        }
+    
+        /* Ensure images cover full screen */
+        .carousel-item img {
+            height: 50vh;
+            object-fit: cover;
+        }
+    
+        /* Center content properly */
+        .carousel-caption {
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+        }
+    </style>
+    
     <!-- Carousel End -->
 
 
